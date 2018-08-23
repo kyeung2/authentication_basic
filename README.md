@@ -43,3 +43,9 @@ The following is forbidden:
 
 >curl -X GET http://user:password@localhost:8080/admin/stats
 ```
+
+
+## Resources
+
+- [Spring Security 5 migration](https://www.harinathk.com/spring/no-passwordencoder-mapped-id-null/)
+- [Spring basic authentication introduction](https://spring.io/blog/2013/07/03/spring-security-java-config-preview-web-security)
