@@ -7,6 +7,7 @@
     <groupId>io.flyingnimbus</groupId>
     <artifactId>authentication_basic</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <description>A single API with basic authentication</description>
     <organization>
         <name>Nimbus Solutions</name>
@@ -32,15 +33,21 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>26.0-jre</version>
+        </dependency>
     </dependencies>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
 
