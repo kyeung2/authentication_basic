@@ -24,7 +24,7 @@ public class AppController {
     public Map add() {
         return ImmutableSortedMap.of(
                 "authentication", "basic",
-                "authorization", "USER role",
+                "authorization", "all roles permitted",
                 "description", "an '/api/**' endpoint where user is authenticated and all users can access");
     }
 
@@ -32,7 +32,7 @@ public class AppController {
     public Map about() {
         return ImmutableSortedMap.of(
                 "authentication", "none",
-                "authorization", "permit all",
+                "authorization", "n/a",
                 "description", "an '/about' endpoint where we probably want everyone to access");
     }
 }
